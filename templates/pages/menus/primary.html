@@ -1,0 +1,39 @@
+{% load pages_tags i18n %}
+
+{% spaceless %}
+<nav role="navigation" class="navbar navbar-default">
+    <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button"
+                data-target="#navbarCollapse"
+                data-toggle="collapse"
+                class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="{% url 'home' %}" class="navbar-brand">
+            <h1 id="flag">
+                <span class="small">The Reed College</span><br/>
+                <span>Student Body Senate</span>
+            </h1>
+        </a>
+    </div>
+    <!-- Collection of nav links and other content for toggling -->
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+            {% for page in page_branch %}
+            {% if page.in_menu %}
+            <li id="primary-menu-{{ page.html_id }}"
+                class="{% if page.is_current_or_ascendant %}active{% endif %}{% if forloop.last %} last{% endif %}">
+                <a href="{{ page.get_absolute_url }}">{{ page.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    </div>
+</nav>
+{% endspaceless %}

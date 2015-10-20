@@ -199,6 +199,15 @@ ROOT_URLCONF = "%s.urls" % PROJECT_APP
 TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 
 
+# Adds page down widget
+RICHTEXT_WIDGET_CLASS = 'mezzanine_pagedown.widgets.PageDownWidget'
+
+RICHTEXT_FILTERS = (
+    'mezzanine_pagedown.filters.extra',
+)
+
+RICHTEXT_FILTER_LEVEL = 3
+
 ################
 # APPLICATIONS #
 ################
@@ -223,6 +232,7 @@ INSTALLED_APPS = (
     "mezzanine.twitter",
     # "mezzanine.accounts",
     # "mezzanine.mobile",
+    "mezzanine_pagedown",
 )
 
 # List of processors used by RequestContext to populate the context.

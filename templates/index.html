@@ -1,0 +1,71 @@
+{% extends "super-base.html" %}
+{% load i18n mezzanine_tags staticfiles pages_tags %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Home" %}</li>
+{% endblock %}
+
+
+{% block header %}
+<div id="home-splash"
+     style="background: url('{% static 'img/puppies.jpg' %}') top center;
+            background-size: cover;">
+
+        {% page_menu "pages/menus/primary.html" %}
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2>Elections are Around the Corner!</h2>
+                    <p>Elections are soon. Interested and running? Check out the open
+                        positions and candidate sheets.</p>
+                    <a class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+</div>
+</div>
+
+
+{% endblock %}
+
+
+{% block content %}
+{% load static %}
+
+<div class="row">
+    <div class="col-md-4">
+        <h3>Meetings</h3>
+        <p><strong>Public Senate Meetings</strong> are every Friday at 4 p.m., usually
+            in the Student Union.</p>
+        <p><strong>Finance Committee Meetings</strong> are on Mondays at 9 p.m.
+            in Eliot 216.</p>
+    </div>
+    <div class="col-md-4">
+        <h3>Office Hours</h3>
+        <h4>Senate</h4>
+        <p>President Ashlin Hatch: Mondays at 4 p.m. in the Paradox.</p>
+        <h4>Treasury</h4>
+        <p><i>All in the treasury office</i><br/>
+            <strong>VP Nick Fiore:</strong> Fridays 10-11a.m.<br/>
+            <strong>Josh:</strong> Mondays 2-3 p.m. and Fridays 2-3 p.m. <br/>
+            <strong>Rachel:</strong> Tuesdays 2:45-3:45 p.m. and Wednesdays
+            3:15-4:15 p.m.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h3>Blog</h3>
+        <h4><a href="#">We have a new website!</a></h4>
+        <p><i>by Saul Chasin</i></p>
+        <p>We have a newly minted website here, intended to help increase the
+            visibility and accessiblity of the student Senate.</p>
+    </div>
+</div>
+
+
+
+{% endblock %}

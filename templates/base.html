@@ -1,0 +1,24 @@
+{% extends "super-base.html" %}
+{% load pages_tags mezzanine_tags i18n staticfiles %}
+
+{% block content %}
+
+<div class="col-md-3">
+
+    {% block left_panel %}
+
+    {% endblock %}
+</div>
+<div class="col-md-9">
+    <ul class="breadcrumb">
+        {% spaceless %}
+        {% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
+        {% endspaceless %}
+    </ul>
+    <h2>{% block title %}{% endblock %}</h2>
+{% block main %}
+
+{% endblock %}
+</div>
+</div>
+{% endblock %}
