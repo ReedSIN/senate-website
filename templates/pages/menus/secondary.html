@@ -1,0 +1,19 @@
+{% load pages_tags i18n %}
+
+{% spaceless %}
+
+<ul>
+    {% for page in page_branch %}
+    {% if page.is_current_or_ascendant or not page.is_primary %}
+    <li>
+        <a href="{{ page.get_absolute_url }}">{{ page.title }}</a>
+        {% page_menu page %}
+    </li>
+    {% else %}
+    <li>{{ page }}</li>
+    {% endif %}
+    {% endfor %}
+</ul>
+
+
+{% endspaceless %}

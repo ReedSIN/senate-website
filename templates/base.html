@@ -5,7 +5,15 @@
 
 <div class="col-md-3">
 
-    {% page_menu "pages/menus/secondary.html" %}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>{{page.title}}</h3>
+            <h2>{{page.parent}}</h2>
+        </div>
+        <div class="panel-body">
+            {% page_menu "pages/menus/secondary.html" page%}
+        </div>
+    </div>
     
 </div>
 <div class="col-md-9">
