@@ -200,13 +200,13 @@ TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 
 
 # Adds page down widget
-RICHTEXT_WIDGET_CLASS = 'mezzanine_pagedown.widgets.PageDownWidget'
+#RICHTEXT_WIDGET_CLASS = 'mezzanine_pagedown.widgets.PageDownWidget'
 
-RICHTEXT_FILTERS = (
-    'mezzanine_pagedown.filters.extra',
-)
+#RICHTEXT_FILTERS = (
+#    'mezzanine_pagedown.filters.extra',
+#)
 
-RICHTEXT_FILTER_LEVEL = 3
+#RICHTEXT_FILTER_LEVEL = 3
 
 ################
 # APPLICATIONS #
@@ -232,7 +232,7 @@ INSTALLED_APPS = (
     "mezzanine.twitter",
     # "mezzanine.accounts",
     # "mezzanine.mobile",
-    "mezzanine_pagedown",
+#    "mezzanine_pagedown",
     "home",
 )
 
