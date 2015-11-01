@@ -9,8 +9,6 @@
         <a href="{{ page.get_absolute_url }}">{{ page.title }}</a>
         {% page_menu page %}
     </li>
-    {% else %}
-    <li>{{ page }}</li>
     {% endif %}
     {% endfor %}
 </ul>
