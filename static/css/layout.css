@@ -1,0 +1,50 @@
+body {
+    padding-top: 0;
+}
+#home-splash {
+    background: #333;
+    height: 75vh;
+    color: white;
+}
+#home-splash a {
+    color: white;
+}
+#home-splash a:hover {
+    color: #ccc;
+}
+#home-splash .navbar {
+    background: linear-gradient(to top,
+                                rgba(0, 0, 0, 0),
+                                rgba(0, 0, 0, 0.8));
+    border: none;
+    box-shadow: none;
+}
+#flag .small {
+    color: #ccc;
+}
+
+#flag {
+    margin: 0;
+    text-align: left;
+    float: left;
+    font-size: 2em;
+}
+
+.menu-secondary ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-secondary li {
+    margin: 0;
+}
+.menu-secondary a {
+    text-decoration: none;
+    padding: 0.5em;
+    color: #333;
+    width: 100%;
+    display: block;
+}
+.menu-secondary a:hover {
+    background: #ccc;
+}
