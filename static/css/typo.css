@@ -1,0 +1,40 @@
+/***********************************************************************************
+                                  TEXT STYLES
+***********************************************************************************/
+/* Colors:
+   Reed red: #5e0501
+*/
+body {
+   font-size: 18px;
+}
+body, h1, h2, h3, h4 {
+    font-family: Palatino, 'Times New Roman', Times, serif;
+}
+
+p, li {
+	line-height: 1.5em;
+}
+
+h1 {
+   font-size: 3.157em;
+   text-align: center;
+   margin-top: 1.5em;
+}
+h2 {
+   font-weight: normal;
+   font-size: 2.369em;
+}
+h3 {
+	font-size: 1.777em;
+}	
+h4 {
+	font-style: italic;
+	color: #444;
+	font-size: 1.333em;
+}
+blockquote {
+    background: #FFADAA;
+    margin: 0;
+    padding: 1em 1em 1em 2em;
+    border-left: 0.5em solid #5e0501;
+}
