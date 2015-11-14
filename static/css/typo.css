@@ -38,3 +38,7 @@ blockquote {
     padding: 1em 1em 1em 2em;
     border-left: 0.5em solid #5e0501;
 }
+
+.info {
+    font-family: 'Cabin', arial, sans-serif;
+}

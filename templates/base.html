@@ -81,17 +81,16 @@
         <div class="col-md-3">
             
             <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3>{{page.title}}</h3>
-                </div>
                 <div class="panel-body">
-                    {% page_menu "pages/menus/tree.html" %}
+                    <nav class="menu-secondary info">
+                    {% page_menu "pages/menus/secondary.html" %}
+                    </nav>
                 </div>
             </div>
             
         </div>
         <div class="col-md-9">
-            <ul class="breadcrumb">
+            <ul class="breadcrumb info small">
                 {% spaceless %}
                 {% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
                 {% endspaceless %}
@@ -129,6 +128,7 @@
 </footer>
 
 {% include "includes/footer_scripts.html" %}
+<link href='https://fonts.googleapis.com/css?family=Cabin:400,600' rel='stylesheet' type='text/css'>
 
 </body>
 </html>

@@ -34,17 +34,31 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-left: 10px;
+    font-size: 0.8em;
+}
+.menu-secondary .navlist-menu-level-0 {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+.menu-secondary .navlist-menu-level-1 {
+    text-transform: none;
+}
+.menu-secondary .navlist-menu-level-2 {
+    text-transform: none;
+
 }
 .menu-secondary li {
     margin: 0;
+    padding: 0;
 }
-.menu-secondary a {
-    text-decoration: none;
-    padding: 0.5em;
+.menu-secondary li > a {
+    padding: 0.2em 0 0.1em;
     color: #333;
     width: 100%;
     display: block;
+    border-bottom: 1px solid #bbb;
 }
-.menu-secondary a:hover {
-    background: #ccc;
+.menu-secondary li > a:hover {
+    text-decoration: underline;
 }
