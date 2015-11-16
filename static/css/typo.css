@@ -42,3 +42,9 @@ blockquote {
 .info {
     font-family: 'Cabin', arial, sans-serif;
 }
+.ui {
+    font-family:
+    -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+}

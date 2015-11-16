@@ -82,7 +82,7 @@
             
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <nav class="menu-secondary info">
+                    <nav class="menu-secondary ui">
                     {% page_menu "pages/menus/secondary.html" %}
                     </nav>
                 </div>
@@ -90,7 +90,7 @@
             
         </div>
         <div class="col-md-9">
-            <ul class="breadcrumb info small">
+            <ul class="breadcrumb ui small">
                 {% spaceless %}
                 {% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
                 {% endspaceless %}
@@ -110,7 +110,7 @@
 
 
 <div class="row">
-<p class="site-info text-center">
+<p class="site-info text-center ui">
     {% trans "Powered by" %}
     <a href="http://mezzanine.jupo.org">Mezzanine</a>{% ifinstalled cartridge.shop %},
     <a href="http://cartridge.jupo.org">Cartridge</a>{% endifinstalled %}
