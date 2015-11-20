@@ -90,11 +90,13 @@
             
         </div>
         <div class="col-md-9">
+            {% comment %}
             <ul class="breadcrumb ui small">
                 {% spaceless %}
                 {% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
                 {% endspaceless %}
             </ul>
+            {% endcomment %}
             <h2>{% block title %}{% endblock %}</h2>
             {% block main %}
             
