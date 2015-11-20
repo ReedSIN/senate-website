@@ -45,11 +45,15 @@
         {{ homepage.center_panel|richtext_filters|safe }}
     </div>
     <div class="col-md-4">
-        <h3>Blog</h3>
-        <h4><a href="#">We have a new website!</a></h4>
-        <p><i>by Saul Chasin</i></p>
-        <p>We have a newly minted website here, intended to help increase the
-            visibility and accessiblity of the student Senate.</p>
+        {% load blog_tags keyword_tags %}
+        {% blog_recent_posts 5 as recent_posts %}
+        {% if recent_posts %}
+        <h2>Latest Blog Post</h2>
+        <h4><a href="{{ recent_post.get_absolute_url }}">
+                {{ recent_post.title }}
+        </a></h4>
+        {{ recent_post.description_from_content|safe }}
+        {% endif %}
     </div>
 </div>
 
