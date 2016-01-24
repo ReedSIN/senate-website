@@ -117,8 +117,7 @@ LANGUAGES = (
 # production. Best set to ``True`` in local_settings.py
 DEBUG = False
 
-# Cookie domain - want it to be different than webapps and other website on server
-SESSION_COOKIE_PATH= "/senate2"
+
 
 # Whether a user's session cookie expires when the Web browser is closed.
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
