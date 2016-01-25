@@ -9,6 +9,9 @@ class HomePage(models.Model):
     '''
     A page representing the format of the home page
     '''
+    featured_box_background = models.ImageField(blank=True,
+        help_text="Background image to appear behind feature box.")
+    
     featured_box_heading = models.CharField(max_length=200,
                                help_text="The heading of the featured box")
     featured_box_content = models.CharField(max_length=200,
